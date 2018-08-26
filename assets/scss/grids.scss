@@ -46,8 +46,6 @@
 }
 
 @media screen and (max-width: 800px) {
-  header { padding: 64px 24px 128px 24px !important; }
-  section { padding: 64px 24px !important; }
   .row {
     display: block;
   }
@@ -68,8 +66,4 @@
   .offset-9,
   .offset-10,
   .offset-11 { margin:0;}
-}
-@media screen and (max-width: 600px) {
-  header { padding: 64px 24px 128px 24px !important; }
-  section { padding: 12px 24px 64px 24px !important; }
 }

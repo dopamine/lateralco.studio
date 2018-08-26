@@ -1,0 +1,42 @@
+// main: ../main.scss
+
+/////// baseline
+$baseline: 20px;
+
+/////// breakpoints
+$bp-mobile : 760px;
+$bp-hd : 1140px;
+
+/////// typog
+$font-main: 'Nunito', sans-serif;
+
+/////// colour palette
+
+$c-grey-00 : #000;
+$c-grey-10 : #303030;
+$c-grey-20 : #6B6D74 ;
+$c-grey-60 : #CFD0D6 ;
+$c-grey-80 : #EFF2F1 ;
+$c-grey-100: #fff ;
+
+$c-gold-10 : #9B4500 ;
+$c-gold-20 : #FEB140 ;
+$c-gold-40 : #FFE17D ;
+$c-gold-60 : #FFEBAC ;
+
+// UI source colours https://coolors.co/547dce-3db559-f2c35e-ef4750-ed245e
+
+$c-error   : #F7BEC1 ;
+$c-warning : #F9E3B5 ;
+$c-success : #A6DDB3 ;
+$c-info    : #E1E6F0 ;
+
+$c-brand : $c-gold-40;
+$c-interaction : #0094C6 ;
+// Alternates
+// #ED245E ; // Pink
+// #3db559 ; // Green
+// #0094C6 ; // Blue
+$c-text : #161032 ;
+
+$c-interaction-d: darken($c-interaction,10);

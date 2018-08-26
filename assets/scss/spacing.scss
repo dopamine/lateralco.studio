@@ -1,0 +1,80 @@
+// main: ../main.scss
+
+/*
+# Requires
+$bp-mobile
+$bp-hd
+$baseline
+
+# Usage
+
+@extend %[inset | squish | stretch | stack | inline]-[XS | S | M | L | XL]
+
+Example
+`@extend %inset-M`
+
+*/
+
+// scale used
+$scale : (
+  0  : 0.0625,
+  1  : 0.125,
+  2  : 0.25,    // XS
+  3  : 0.5,    // S
+  4  : 1,      // M
+  5  : 1.5,    // L
+  6  : 3,      // XL
+  7  : 6,
+  8  : 10
+);
+
+// naming convention
+$sizes : ('XS', 'S', 'M', 'L', 'XL');
+
+$spacings : ();
+
+@each $k,$v in $scale {
+  $spacings: append($spacings, $v*$baseline);
+}
+
+@mixin inset($s,$p) {
+  %inset-#{$s} { padding: $p }
+}
+
+@mixin squish($s,$p) {
+  %squish-#{$s} { padding: round($p/3) $p }
+}
+
+@mixin stretch($s,$p) {
+  %stretch-#{$s} { padding: $p round($p/3) }
+}
+
+@mixin stack($s,$p) {
+  %stack-#{$s} { margin-bottom: $p }
+}
+
+@mixin inline($s,$p) {
+  %inline-#{$s} { margin-right: $p }
+}
+
+
+@mixin spacing($offs) {
+  $i : 1;
+  @each $s in $sizes {
+    $v : nth($spacings, $i+$offs);
+
+    @include inset($s, $v);
+    @include squish($s, $v);
+    @include stretch($s, $v);
+    @include stack($s, $v);
+    @include inline($s, $v);
+
+    $i : $i+1;
+  }
+}
+
+@include spacing(2);
+
+@media screen and (max-width: $bp-mobile ) { @include spacing(1); }
+
+@media screen and (min-width: $bp-hd ) { @include spacing(3); }
