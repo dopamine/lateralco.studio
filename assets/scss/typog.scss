@@ -6,6 +6,7 @@ html { font-size:$baseline; }
 
 body { font: 200 1rem /1.6 $font-main; color: $c-text; }
 
+.pull-center {text-align:center;}
 .hero {  font: 200 2rem /1.05 $font-main; text-align:center;}
 h1 {  font: 400 2rem /1.4 $font-main; }
 h2 {  font: 400 1.5rem /1.5 $font-main; }
@@ -50,6 +51,15 @@ section ul li:before {
 }
 blockquote { @extend %squish-L; }
 
+input, select, textarea,
+input[type='submit'],
+button {
+  color:$c-grey-00;
+  font: 400 1rem $font-main;
+  letter-spacing:.05rem;
+  white-space:nowrap;
+}
+
 nav ul li {
   @extend %squish-M;
 
@@ -66,3 +76,9 @@ nav ul li {
     transition:border-bottom .3s ease;
   }
 }
+
+.text-columns {columns: 18rem auto;}
+.text-columns h1,
+.text-columns h2,
+.text-columns h3 {break-after:avoid;}
+.text-columns p {break-inside:avoid;}
