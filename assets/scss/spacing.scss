@@ -37,24 +37,67 @@ $spacings : ();
   $spacings: append($spacings, $v*$baseline);
 }
 
-@mixin inset($s,$p) {
-  %inset-#{$s} { padding: $p }
+@mixin inset($s,$i, $offs) {
+  %inset-#{$s} { padding: nth($spacings, $i+$offs) }
+
+  @media screen and (max-width: $bp-mobile ) {
+    %inset-#{$s} { padding: nth($spacings, $i+$offs - 1) }
+  }
+  @media screen and (min-width: $bp-hd ) {
+    %inset-#{$s} { padding: nth($spacings, $i+$offs + 1) }
+  }
 }
 
-@mixin squish($s,$p) {
-  %squish-#{$s} { padding: round($p/3) $p }
+@mixin squish($s,$i, $offs) {
+  %squish-#{$s} {
+    $p : nth($spacings, $i+$offs);
+    padding: round($p/3) $p
+  }
+  @media screen and (max-width: $bp-mobile ) {
+    $p : nth($spacings, $i+$offs - 1);
+    %squish-#{$s} { padding: round($p/3) $p }
+  }
+  @media screen and (min-width: $bp-hd ) {
+    $p : nth($spacings, $i+$offs + 1);
+    %squish-#{$s} { padding: round($p/3) $p }
+  }
 }
 
-@mixin stretch($s,$p) {
-  %stretch-#{$s} { padding: $p round($p/3) }
+@mixin stretch($s,$i,$offs) {
+  %stretch-#{$s} {
+    $p : nth($spacings, $i+$offs);
+    padding: $p round($p/3)
+  }
+  @media screen and (max-width: $bp-mobile ) {
+    $p : nth($spacings, $i+$offs - 1);
+    %stretch-#{$s} { padding: $p round($p/3) }
+  }
+  @media screen and (min-width: $bp-hd ) {
+    $p : nth($spacings, $i+$offs + 1);
+    %stretch-#{$s} { padding: $p round($p/3) }
+  }
 }
 
-@mixin stack($s,$p) {
-  %stack-#{$s} { margin-bottom: $p }
+@mixin stack($s,$i,$offs) {
+  %stack-#{$s} {
+    margin-bottom: nth($spacings, $i+$offs) ;
+  }
+  @media screen and (max-width: $bp-mobile ) {
+    %stack-#{$s} { margin-bottom: nth($spacings, $i+$offs - 1) ; }
+  }
+  @media screen and (min-width: $bp-hd ) {
+    %stack-#{$s} { margin-bottom: nth($spacings, $i+$offs + 1) ; }
+  }
 }
 
-@mixin inline($s,$p) {
-  %inline-#{$s} { margin-right: $p }
+@mixin inline($s,$i,$offs) {
+  %inline-#{$s} { margin-right: nth($spacings, $i+$offs) }
+  @media screen and (max-width: $bp-mobile ) {
+    %inline-#{$s} {  margin-right: nth($spacings, $i+$offs - 1 ) }
+  }
+  @media screen and (min-width: $bp-hd ) {
+    %inline-#{$s} { margin-right: nth($spacings, $i+$offs + 1) }
+  }
 }
 
 
@@ -63,11 +106,11 @@ $spacings : ();
   @each $s in $sizes {
     $v : nth($spacings, $i+$offs);
 
-    @include inset($s, $v);
-    @include squish($s, $v);
-    @include stretch($s, $v);
-    @include stack($s, $v);
-    @include inline($s, $v);
+    @include inset($s, $i, $offs);
+    @include squish($s, $i, $offs);
+    @include stretch($s, $i, $offs);
+    @include stack($s, $i, $offs);
+    @include inline($s, $i, $offs);
 
     $i : $i+1;
   }
@@ -75,6 +118,6 @@ $spacings : ();
 
 @include spacing(2);
 
-@media screen and (max-width: $bp-mobile ) { @include spacing(1); }
+//@media screen and (max-width: $bp-mobile ) { @include spacing(1); }
 
-@media screen and (min-width: $bp-hd ) { @include spacing(3); }
+//@media screen and (min-width: $bp-hd ) { @include spacing(3); }

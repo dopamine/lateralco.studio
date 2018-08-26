@@ -157,7 +157,7 @@ table {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
   .row {
     display: block;
   }
@@ -323,6 +323,13 @@ section {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 760px) {
+  section {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
 .highlight {
   position: relative;
   display: inline-block;
@@ -357,44 +364,9 @@ ul li {
   margin-bottom: 5px;
 }
 
-h3, h4, h5, h6, p {
-  margin-bottom: 10px;
-}
-
-ul, button {
-  padding: 7px 20px;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-blockquote {
-  padding: 10px 30px;
-}
-
-h1, section {
-  margin-bottom: 30px;
-}
-
 @media screen and (max-width: 760px) {
   ul li {
     margin-bottom: 2.5px;
-  }
-  h3, h4, h5, h6, p {
-    margin-bottom: 5px;
-  }
-  ul, button {
-    padding: 3px 10px;
-  }
-  h2 {
-    margin-bottom: 10px;
-  }
-  blockquote {
-    padding: 7px 20px;
-  }
-  h1, section {
-    margin-bottom: 20px;
   }
 }
 
@@ -402,18 +374,83 @@ h1, section {
   ul li {
     margin-bottom: 10px;
   }
+}
+
+h3, h4, h5, h6, p {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  h3, h4, h5, h6, p {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
   h3, h4, h5, h6, p {
     margin-bottom: 20px;
   }
+}
+
+ul, button {
+  padding: 7px 20px;
+}
+
+@media screen and (max-width: 760px) {
+  ul, button {
+    padding: 3px 10px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
   ul, button {
     padding: 10px 30px;
   }
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 760px) {
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
   h2 {
     margin-bottom: 30px;
   }
+}
+
+blockquote {
+  padding: 10px 30px;
+}
+
+@media screen and (max-width: 760px) {
+  blockquote {
+    padding: 7px 20px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
   blockquote {
     padding: 20px 60px;
   }
+}
+
+h1, section {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 760px) {
+  h1, section {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
   h1, section {
     margin-bottom: 60px;
   }

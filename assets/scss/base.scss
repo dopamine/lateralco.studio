@@ -53,8 +53,13 @@ a.action {
 
 section {
   max-width:800px;
-  margin:0 auto;
   @extend %stack-L;
+
+  margin:0 auto;
+  @media screen and (max-width: $bp-mobile ) {
+    margin-left: 2*$baseline ;
+    margin-right: 2*$baseline ;
+  }
 }
 
 .highlight {position:relative;display:inline-block;}
