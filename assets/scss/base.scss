@@ -20,8 +20,11 @@ button {
   }
   &:focus {
     outline:0;
-    box-shadow:0 0 0 3px $c-gold-60, inset 0 2px 0 0 rgba(0,0,0,0.1);
+    box-shadow:0 0 0 3px $c-gold-60;
     transition: box-shadow 0.2s ease-in-out;
+  }
+  &:active {
+    box-shadow:0 0 0 3px $c-gold-60, inset 2px 3px 0 0 rgba(0,0,0,0.1);
   }
 }
 
@@ -36,10 +39,34 @@ a.action {
 }
 
 
+header {
+  @extend %squish-XL;
+  @extend %stack-L;
+  background:$c-grey-100;
+  position:relative;
+}
+
+nav {
+  position:absolute;
+  right:0; top:30%;
+  @extend %inline-XL;
+}
+nav ul {display:block; }
+nav ul li {display:inline-block;}
+nav ul li::before { display:none; }
+
+.logo span{ display:none; }
+
 .logo {
-  width:100px;
-  height:58px;
+  width:120px;
+  height:69px;
   background:url('assets/img/logo-color.svg');
+  background-size:cover;
+
+  @media screen and (max-width: $bp-mobile) {
+    width:100px;
+    height:58px;
+  }
 }
 
 .avatar {

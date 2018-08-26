@@ -9,7 +9,7 @@ body { font: 200 1rem /1.6 $font-main; color: $c-text; }
 .hero {  font: 200 2rem /1.05 $font-main; text-align:center;}
 h1 {  font: 400 2rem /1.4 $font-main; }
 h2 {  font: 400 1.5rem /1.5 $font-main; }
-h3 {  font: 600 1.25rem /1.3 $font-main; }
+h3 {  font: 400 1.1rem /1.3 $font-main; }
 p {  font: 200 1rem /1.5 $font-main; }
 a {
   font-weight:400;
@@ -33,14 +33,34 @@ h1 { @extend %stack-L; }
 h2 { @extend %stack-M; }
 h3,h4,h5,h6 { @extend %stack-S; }
 p { @extend %stack-S; }
-ul { @extend %squish-M; list-style-type:none;}
-ul li {
+section ul {
+  // @extend %squish-M;
+   list-style-type:none;
+ }
+section ul li {
   line-height:1.2em;
   @extend %stack-XS;
 }
-ul li:before {
+section ul li:before {
   content: '\2013';
   position: absolute;
-  margin-left: -1.5*$baseline;
+  margin-left: -1.2*$baseline;
 }
 blockquote { @extend %squish-L; }
+
+nav ul li {
+  @extend %squish-M;
+
+  a {
+    font:600 0.75rem/1.5 $font-main;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom:0px solid transparent;
+    transition:border-bottom .3s ease;
+  }
+  a:hover {
+    color:$c-text;
+    border-bottom:2px solid $c-interaction-l;
+    transition:border-bottom .3s ease;
+  }
+}
