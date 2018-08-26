@@ -1,0 +1,28 @@
+
+.overlay
+  section.contactform 
+    h2 Let's talk
+    p Sounds like you're interested &mdash; drop me a line with about what your business needs and if all the stars are aligned, we'll be meeting up for your initial consultation in a jiffy.
+    p Current availabilty: 
+      strong April 2019 onwards
+  
+    form(action="https://formspree.io/your@email.com", method="post")
+      input(type="text" name="_gotcha", style="display:none")
+      input(type='hidden' name='redirect_to', value='http://glintremote.com/thanks.html>')
+      label Your email address
+      input(type='text', name='email' placeholder='yours@example.com')
+      
+      label Why you're getting in touch
+      select
+        option Pick a topic...
+        option Service enquiry: Expert Design research
+        option Service enquiry: Remote UX Checkup
+        option General enquiry
+      
+      label Message
+      textarea(name='message')
+      
+      input(type='submit', value='Send message')
+      input(type="text" name="_gotcha", style="display:none")
+      
+    button.action.dismiss Close

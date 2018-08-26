@@ -33,6 +33,8 @@ h1 { @extend %stack-L; }
 h2 { @extend %stack-M; }
 h3,h4,h5,h6 { @extend %stack-S; }
 p { @extend %stack-S; }
+strong {font-weight:600;}
+em {text-style:italic;}
 section ul {
   // @extend %squish-M;
    list-style-type:none;

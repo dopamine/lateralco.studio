@@ -3,14 +3,14 @@
   <head>
     <title>Remote User Experience Checkup | Glint UX</title>
     <link rel="stylesheet" href="./main.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=8">
   </head>
+  <body></body>
 </html>
-<!--    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')-->
-<!--    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')body
--->
 <header>
   <div class="logo"> <span>Glint UX - Remote Design Services</span></div>
   <nav>
@@ -49,17 +49,19 @@
   </ul>
 </section>
 <section class="cta">
-  <h2>If this sounds like you, let's talk!</h2>
+  <h2 class="hero">If this sounds like you, let's talk!</h2>
   <h3>Some quick facts</h3>
   <dl>
     <dt>Package price</dt>
     <dd>&pound;X,XXX</dd>
     <dt>Project duration</dt>
-    <dd>4 weeks</dd>
+    <dd>6 weeks</dd>
+    <dt>Currently available from</dt>
+    <dd>January 2019</dd>
     <dt>Deliverables</dt>
     <dd>Key journey maps, ???</dd>
   </dl>
-  <button class="primary">Get in touch</button>
+  <button class="contactbutton primary">Get in touch</button>
 </section>
 <div class="clipPaths">
    
@@ -71,4 +73,29 @@
    <path  d="M-0.0559539795,0.110013476 C0.030600426,0.102550985 0.113470515,0.118167409 0.192656287,0.156862745 C0.333094856,0.225490196 0.333094856,0.284313725 0.484827002,0.284313725 C0.614028236,0.284313725 0.614028236,0.12745098 0.788235053,0.0980392157 C0.879142663,0.0826910606 0.972324159,0.0866824805 1.0,0.110013476 L1.0,0.894327201 C0.965195141,0.765254344 0.872013645,0.686099525 0.788235053,0.656862745 C0.563488349,0.578431373 0.563488349,0.882352941 0.248842963,0.774509804 C0.163943449,0.745410919 0.062344468,0.785350051 -0.0559539795,0.894327201 L-0.0559539795,0.110013476 Z"  />
    </clipPath>
   </svg>
+</div>
+<div class="overlay">
+  <section class="contactform"> 
+    <h2>Let's talk</h2>
+    <p>Sounds like you're interested &mdash; drop me a line with about what your business needs and if all the stars are aligned, we'll be meeting up for your initial consultation in a jiffy.</p>
+    <p>Current availabilty: <strong>April 2019 onwards</strong></p>
+    <form action="https://formspree.io/your@email.com" method="post">
+      <input type="text" name="_gotcha" style="display:none">
+      <input type="hidden" name="redirect_to" value="http://glintremote.com/thanks.html&gt;">
+      <label>Your email address</label>
+      <input type="text" name="email" placeholder="yours@example.com">
+      <label>Why you're getting in touch</label>
+      <select>
+        <option>Pick a topic...</option>
+        <option>Service enquiry: Expert Design research</option>
+        <option>Service enquiry: Remote UX Checkup</option>
+        <option>General enquiry</option>
+      </select>
+      <label>Message</label>
+      <textarea name="message"></textarea>
+      <input type="submit" value="Send message">
+      <input type="text" name="_gotcha" style="display:none">
+    </form>
+    <button class="action dismiss">Close</button>
+  </section>
 </div>
