@@ -427,6 +427,24 @@ nav ul li::before {
   display: none;
 }
 
+.skiptocontent {
+  position: fixed;
+  top: -140px;
+  left: 4px;
+  width: 20vw;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 0 0 6px 6px;
+}
+
+.skiptocontent:focus {
+  top: 0px;
+  left: 16px;
+  z-index: 10;
+  outline: 0;
+}
+
 .brand {
   position: relative;
 }
@@ -609,6 +627,22 @@ input:not([type^='submit']), select, textarea, nav {
 @media screen and (min-width: 1140px) {
   input:not([type^='submit']), select, textarea, nav {
     padding: 20px;
+  }
+}
+
+.skiptocontent {
+  padding: 3px 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .skiptocontent {
+    padding: 2px 5px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .skiptocontent {
+    padding: 7px 20px;
   }
 }
 

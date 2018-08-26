@@ -85,7 +85,21 @@ nav ul li {display:inline-block;}
 nav ul li::before { display:none; }
 
 
-
+.skiptocontent {
+  position:fixed;
+  top:-140px;left:4px;
+  width:20vw;
+  @extend %squish-S;
+  background:$c-grey-00;
+  color:$c-grey-100;
+  text-align:center;
+  border-radius: 0 0 6px 6px ;
+}
+.skiptocontent:focus {
+  top:0px;left:16px;
+  z-index:10;
+  outline:0;
+}
 
 .brand {
   position:relative;
