@@ -218,7 +218,7 @@ a {
 }
 
 a:hover {
-  color: #0094C6;
+  color: #7079B5;
 }
 
 a:focus {
@@ -281,7 +281,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 0 0 3px #CFD0D6;
+  box-shadow: 0 0 0 3px #bdc1dd;
 }
 
 button:focus {

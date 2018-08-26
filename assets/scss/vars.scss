@@ -32,11 +32,13 @@ $c-success : #A6DDB3 ;
 $c-info    : #E1E6F0 ;
 
 $c-brand : $c-gold-40;
-$c-interaction : #0094C6 ;
+$c-interaction : #7079B5 ;
 // Alternates
 // #ED245E ; // Pink
 // #3db559 ; // Green
 // #0094C6 ; // Blue
+// #7079B5 ; // Purple
 $c-text : #161032 ;
 
-$c-interaction-d: darken($c-interaction,10);
+$c-interaction-d: darken($c-interaction, 10); //#007AA3;
+$c-interaction-l: lighten($c-interaction, 23); //#D0EBF4;

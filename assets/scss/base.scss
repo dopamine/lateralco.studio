@@ -16,7 +16,7 @@ button {
   letter-spacing:.05rem;
   transition: box-shadow 0.2s ease-in-out;
   &:hover {
-    box-shadow:0 0 0 3px $c-grey-60;
+    box-shadow:0 0 0 3px $c-interaction-l;
   }
   &:focus {
     outline:0;
