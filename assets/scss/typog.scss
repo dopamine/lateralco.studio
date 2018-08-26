@@ -60,6 +60,15 @@ button {
   white-space:nowrap;
 }
 
+
+.brand h1 {
+  font-size: .8rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+
 nav ul li {
   @extend %squish-M;
 

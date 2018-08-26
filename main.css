@@ -285,6 +285,13 @@ button {
   white-space: nowrap;
 }
 
+.brand h1 {
+  font-size: .8rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 nav ul li a {
   font: 600 0.75rem/1.5 "Nunito", sans-serif;
   text-transform: uppercase;
@@ -393,7 +400,18 @@ header {
 nav {
   position: absolute;
   right: 0;
-  top: 30%;
+  top: 20px;
+}
+
+nav :last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 760px) {
+  nav {
+    position: relative;
+    text-align: center;
+  }
 }
 
 nav ul {
@@ -408,21 +426,41 @@ nav ul li::before {
   display: none;
 }
 
-.logo span {
-  display: none;
+.brand {
+  position: relative;
 }
 
-.logo {
+.brand .logo {
   width: 120px;
   height: 69px;
   background: url("assets/img/logo-color.svg");
   background-size: cover;
 }
 
+.brand h1 span {
+  display: none;
+}
+
+.brand h1 {
+  position: absolute;
+  top: 26px;
+  left: 144px;
+}
+
 @media screen and (max-width: 760px) {
-  .logo {
-    width: 100px;
-    height: 58px;
+  .brand {
+    width: 50vw;
+    margin: 40px auto;
+  }
+  .brand .logo {
+    margin: 0 auto 20px;
+  }
+  .brand h1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto 0;
+    text-align: center;
   }
 }
 
@@ -485,7 +523,7 @@ section.narrow {
 
 .illustration img {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .overlay {
@@ -551,18 +589,18 @@ section ul li {
   }
 }
 
-input:not([type^='submit']), select, textarea {
+input:not([type^='submit']), select, textarea, nav {
   padding: 10px;
 }
 
 @media screen and (max-width: 760px) {
-  input:not([type^='submit']), select, textarea {
+  input:not([type^='submit']), select, textarea, nav {
     padding: 5px;
   }
 }
 
 @media screen and (min-width: 1140px) {
-  input:not([type^='submit']), select, textarea {
+  input:not([type^='submit']), select, textarea, nav {
     padding: 20px;
   }
 }
@@ -728,17 +766,17 @@ header {
 }
 
 nav {
-  margin-right: 60px;
+  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 760px) {
   nav {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1140px) {
   nav {
-    margin-right: 120px;
+    margin-bottom: 120px;
   }
 }
