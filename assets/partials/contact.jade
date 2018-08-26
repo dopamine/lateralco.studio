@@ -9,18 +9,22 @@
     form(action="https://formspree.io/your@email.com", method="post")
       input(type="text" name="_gotcha", style="display:none")
       input(type='hidden' name='redirect_to', value='http://glintremote.com/thanks.html>')
-      label Your email address
-      input(type='text', name='email' placeholder='yours@example.com')
       
-      label Why you're getting in touch
+      label Reason you're getting in touch
       select
-        option Pick a topic...
+        option Pick one...
         option Service enquiry: Expert Design research
         option Service enquiry: Remote UX Checkup
         option General enquiry
       
-      label Message
+      label Message *
       textarea(name='message')
+      
+      label Your email address *
+      input(type='text', name='email' placeholder='yours@example.com')
+      
+      label Your website *
+      input(type='text', name='url' placeholder='http://')
       
       input(type='submit', value='Send message')
       input(type="text" name="_gotcha", style="display:none")

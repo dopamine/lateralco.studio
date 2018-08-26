@@ -52,7 +52,8 @@ input:not([type ^= 'submit']), select, textarea {
   @extend %inset-S;
   @extend %stack-M;
   display:block;
-  width:400px;
+  width:90%;
+  max-width:400px;
   border-color: $c-grey-60;
   &:focus { border-color:$c-grey-20; }
 }
@@ -169,7 +170,7 @@ section.narrow {
   height:40vmin;
   margin:(-2*$baseline) 0px (-$baseline) 0;
 
-  background:center/4% url('./assets/img/pattern-sprinkles.png') repeat;
+  background:center/40px url('./assets/img/pattern-sprinkles.png') repeat;
   clip-path:url("#wave");
 }
 
@@ -196,6 +197,9 @@ section.narrow {
   @extend %inset-XL;
   background:$c-grey-100;
   box-shadow:0 0 20px 20px rgba(0,0,0,0.1);
+  @media screen and (max-width:$bp-mobile) {
+    width:80vw;
+  }
 }
 
 .dismiss {
