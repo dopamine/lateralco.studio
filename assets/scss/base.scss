@@ -91,9 +91,12 @@ nav ul li::before { display:none; }
   width:20vw;
   @extend %squish-S;
   background:$c-grey-00;
-  color:$c-grey-100;
+  color:$c-grey-80;
   text-align:center;
   border-radius: 0 0 6px 6px ;
+  &:hover {
+    color:$c-gold-60;
+  }
 }
 .skiptocontent:focus {
   top:0px;left:16px;
