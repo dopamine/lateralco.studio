@@ -9,17 +9,19 @@
 
 #blog article {
   padding:40px 120px;
+  @media screen and (max-width:760px){
+    padding:40px;
+  }
 }
 
 #blog article.post {
   max-width:40em;
 }
 
-@media screen {
-  #blog article.post h1 {
-    margin-bottom:30px;
-  }
+#blog article.post h1 {
+  margin-bottom:30px;
 }
+
 
 #blog article.post h1 a {
   text-decoration:none;

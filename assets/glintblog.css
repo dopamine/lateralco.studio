@@ -1,21 +1,26 @@
-
 #blog nav a.active {
-  color:#161032;
-  border-bottom:2px solid #D0EBF4;
+  color: #161032;
+  border-bottom: 2px solid #D0EBF4;
 }
 
 #blog article {
-  padding:40px 120px;
+  padding: 40px 120px;
+}
+
+@media screen and (max-width: 760px) {
+  #blog article {
+    padding: 40px;
+  }
 }
 
 #blog article.post {
-  max-width:40em;
+  max-width: 40em;
 }
 
 #blog article.post h1 {
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 #blog article.post h1 a {
-  text-decoration:none;
+  text-decoration: none;
 }

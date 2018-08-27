@@ -96,18 +96,20 @@
   </svg>
 </div>
 <div class="overlay">
-  <section class="contactform"> 
+  <section class="contactform">
     <h2>Let's talk</h2>
     <p>Sounds like you're interested &mdash; drop me a line with about what your business needs and if all the stars are aligned, we'll be meeting up for your initial consultation in a jiffy.</p>
-    <p>Current availabilty: <strong>April 2019 onwards</strong></p>
+    <p>Current availabilty:<strong>April 2019 onwards</strong></p>
     <form action="https://formspree.io/glintremote@xiple.co.uk" method="post">
-      <input type="text" name="_gotcha" style="display:none">
-      <input type="hidden" name="_next" value="http://glintremote.com/thanks.html&gt;">
+      <input type="hidden" name="_next" value="http://glintremote.com/home.html#thanks">
+      <input type="hidden" name="_subject" value="Glint Contact Form Submission">
       <label>Reason you're getting in touch</label>
-      <select>
+      <select name="enquiry">
         <option>Pick one...</option>
         <option>Services: Expert Design research</option>
         <option>Services: Remote UX Checkup</option>
+        <option>Feedback or testimonial</option>
+        <option>Blog enquiry</option>
         <option>General enquiry</option>
       </select>
       <label>Message *</label>
@@ -117,7 +119,6 @@
       <label>Your website *</label>
       <input type="text" name="url" placeholder="http://">
       <input type="submit" value="Send message">
-      <input type="text" name="_gotcha" style="display:none">
     </form>
     <button class="action dismiss">Close</button>
   </section>
