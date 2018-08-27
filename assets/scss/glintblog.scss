@@ -1,0 +1,23 @@
+// sass main
+// sourceMap false
+// compileExpanded: ../glintblog.css
+
+#blog nav a.active {
+  &:hover {
+    color:#161032;
+    border-bottom:2px solid #D0EBF4;
+    transition:border-bottom .3s ease;
+  }
+}
+
+#blog article {
+  padding:40px 120px;
+}
+
+#blog article.post {
+  max-width:40em;
+}
+
+#blog article h1 a {
+  text-decoration:none;
+}
