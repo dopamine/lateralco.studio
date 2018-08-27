@@ -9,7 +9,13 @@
 
 @media screen and (max-width: 760px) {
   #blog article {
-    padding: 40px;
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  #blog article {
+    padding: 20px 60px;
   }
 }
 

@@ -10,7 +10,10 @@
 #blog article {
   padding:40px 120px;
   @media screen and (max-width:760px){
-    padding:40px;
+    padding:10px 40px;
+  }
+  @media screen and (max-width:1140px){
+    padding:20px 60px;
   }
 }
 
