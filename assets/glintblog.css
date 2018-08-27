@@ -1,10 +1,7 @@
 
 #blog nav a.active {
-  &:hover {
-    color:#161032;
-    border-bottom:2px solid #D0EBF4;
-    transition:border-bottom .3s ease;
-  }
+  color:#161032;
+  border-bottom:2px solid #D0EBF4;
 }
 
 #blog article {
@@ -13,6 +10,10 @@
 
 #blog article.post {
   max-width:40em;
+}
+
+#blog article h1 {
+  margin-bottom:30px;
 }
 
 #blog article h1 a {
