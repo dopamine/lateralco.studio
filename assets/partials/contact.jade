@@ -1,32 +1,33 @@
 
 .overlay
-  section.contactform 
+  section.contactform
     h2 Let's talk
     p Sounds like you're interested &mdash; drop me a line with about what your business needs and if all the stars are aligned, we'll be meeting up for your initial consultation in a jiffy.
-    p Current availabilty: 
+    p Current availabilty:
       strong April 2019 onwards
-  
+
     form(action="https://formspree.io/glintremote@xiple.co.uk", method="post")
-      input(type="text" name="_gotcha", style="display:none")
-      input(type='hidden' name='_next', value='http://glintremote.com/thanks.html>')
-      
+      input(type='hidden' name='_next', value='http://glintremote.com/home.html#thanks')
+      input(type='hidden' name='_subject', value='Glint Contact Form Submission')
+
       label Reason you're getting in touch
-      select
+      select(name='enquiry')
         option Pick one...
         option Services: Expert Design research
         option Services: Remote UX Checkup
+        option Feedback or testimonial
+        option Blog enquiry
         option General enquiry
-      
+
       label Message *
       textarea(name='message')
-      
+
       label Your email address *
       input(type='text', name='email' placeholder='yours@example.com')
-      
+
       label Your website *
       input(type='text', name='url' placeholder='http://')
-      
+
       input(type='submit', value='Send message')
-      input(type="text" name="_gotcha", style="display:none")
-      
+
     button.action.dismiss Close

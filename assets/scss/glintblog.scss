@@ -15,6 +15,12 @@
   max-width:40em;
 }
 
-#blog article h1 a {
+@media screen {
+  #blog article.post h1 {
+    margin-bottom:30px;
+  }
+}
+
+#blog article.post h1 a {
   text-decoration:none;
 }

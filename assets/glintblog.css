@@ -12,10 +12,10 @@
   max-width:40em;
 }
 
-#blog article h1 {
+#blog article.post h1 {
   margin-bottom:30px;
 }
 
-#blog article h1 a {
+#blog article.post h1 a {
   text-decoration:none;
 }
