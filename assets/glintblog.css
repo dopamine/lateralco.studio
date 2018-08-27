@@ -19,14 +19,43 @@
   }
 }
 
-#blog article.post {
+#blog article {
   max-width: 40em;
 }
 
-#blog article.post h1 {
+#blog article h1 {
   margin-bottom: 30px;
 }
 
-#blog article.post h1 a {
+#blog article h1 a {
+  text-decoration: none;
+}
+
+#blog a.read-more::before {
+  margin: 0 4px;
+  padding: 2px 3px;
+  background: #eee;
+  border-radius: 30%;
+  display: block;
+  content: ' ';
+  width: 1em;
+  height: 0.6em;
+  position: absolute;
+  bottom: 8px;
+  left: -2px;
+  z-index: -10;
+}
+
+#blog a.read-more::before:hover {
+  background: #000;
+}
+
+#blog a.read-more {
+  margin: -24px 4px;
+  padding: 2px 11px;
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  font-size: 2em;
   text-decoration: none;
 }
