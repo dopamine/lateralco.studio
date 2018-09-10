@@ -43,9 +43,6 @@
     bottom: 8px;
     left: -2px;
     z-index: -10;
-    &:hover {
-      background:#000;
-    }
 }
 #blog a.read-more {
     margin: -24px 4px;
@@ -55,4 +52,7 @@
     top: -4px;
     font-size: 2em;
     text-decoration: none;
+    &:hover::before {
+      background:#000;
+    }
 }

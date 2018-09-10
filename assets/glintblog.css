@@ -46,10 +46,6 @@
   z-index: -10;
 }
 
-#blog a.read-more::before:hover {
-  background: #000;
-}
-
 #blog a.read-more {
   margin: -24px 4px;
   padding: 2px 11px;
@@ -58,4 +54,8 @@
   top: -4px;
   font-size: 2em;
   text-decoration: none;
+}
+
+#blog a.read-more:hover::before {
+  background: #000;
 }

@@ -216,6 +216,10 @@ p {
   font: 200 1rem/1.5 "Nunito", sans-serif;
 }
 
+.lead {
+  font-size: 1.2em;
+}
+
 a {
   font-weight: 400;
   color: #161032;
@@ -730,22 +734,6 @@ h2, input:not([type^='submit']), select, textarea, .hero, dl.factsheet {
   }
 }
 
-.service {
-  padding: 30px;
-}
-
-@media screen and (max-width: 760px) {
-  .service {
-    padding: 20px;
-  }
-}
-
-@media screen and (min-width: 1140px) {
-  .service {
-    padding: 60px;
-  }
-}
-
 blockquote, .hero {
   padding: 10px 30px;
 }
@@ -762,18 +750,18 @@ blockquote, .hero {
   }
 }
 
-h1, section {
+h1, section, .service {
   margin-bottom: 30px;
 }
 
 @media screen and (max-width: 760px) {
-  h1, section {
+  h1, section, .service {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 1140px) {
-  h1, section {
+  h1, section, .service {
     margin-bottom: 60px;
   }
 }
