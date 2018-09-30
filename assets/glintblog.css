@@ -3,31 +3,37 @@
   border-bottom: 2px solid #D0EBF4;
 }
 
-#blog article {
+#blog article.post,
+#blog article.page {
   padding: 40px 120px;
 }
 
 @media screen and (max-width: 760px) {
-  #blog article {
+  #blog article.post,
+  #blog article.page {
     padding: 10px 40px;
   }
 }
 
 @media screen and (max-width: 1140px) {
-  #blog article {
+  #blog article.post,
+  #blog article.page {
     padding: 20px 60px;
   }
 }
 
-#blog article {
+#blog article.post,
+#blog article.page {
   max-width: 40em;
 }
 
-#blog article h1 {
+#blog article.post h1,
+#blog article.page h1 {
   margin-bottom: 30px;
 }
 
-#blog article h1 a {
+#blog article.post h1 a,
+#blog article.page h1 a {
   text-decoration: none;
 }
 
@@ -58,4 +64,9 @@
 
 #blog a.read-more:hover::before {
   background: #000;
+}
+
+#archives .archive-date {
+  display: inline-block;
+  min-width: 8em;
 }
