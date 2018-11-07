@@ -5,31 +5,30 @@
 include ../assets/partials/header.jade
   include ../assets/partials/masthead.jade
   #content
-    section.valueprop
-      h2.hero Up your startup game with 
+    section.narrow.valueprop
+      h2.hero.tagline Up your startup game with 
         span.highlight design research
-      .row
-        .col-6 
-          p.lead Ready to bootstrap your business with design? Let's talk. 
-        .col-6 
-          p I offer customised packages based on your unique needs, from taking your first steps towards building a design-led product, to taking full stock of how your existing service performs.
+        
+      p.lead Ready to bootstrap your business with design? Let's talk. 
+      p I offer customised packages based on your unique needs, from taking your first steps towards building a design-led product, to taking full stock of how your existing service performs.
       
-    section.services-intro
+    section.service
       .row
         .col-4
-          img(src='https://via.placeholder.com/240x240?text=Research+illustration+240x240', alt='Research illustration')
-        .col-8.service
+          img(src='assets/img/undraw-design-research.png', alt='Research illustration', class='illustration')
+        .col-7.offset-1
           h3 Expert Design Research
           p You have the beginnings of a product or service but need more insight about your customers to make it shine. You want proper research done but you can't afford a full-time UX or Product Designer.
-          a.action Sounds like you?
+          a.action About this package
           
+    section.service
       .row
-        .col-4
-          img(src='https://via.placeholder.com/240x240?text=Checkup+illustration+240x240', alt='Checkup illustration')
-        .col-8.service
+        .col-7
           h3 Remote UX Checkup
           p Your business is online, plenty of people visit your site, only they don’t sign up or buy at the rate you expected them to. There must be bottlenecks somewhere... but you don’t know how to find them.
-          a.action(href='./service-template.html') Sounds like you?
+          a.action(href='./service-template.html') About this package
+        .col-4.offset-1
+          img(src='assets/img/undraw-ux-checkup.png', alt='Checkup illustration', class='illustration')
 
 
     .sprinkles

@@ -6,34 +6,43 @@
 include ../assets/partials/header.jade
   include ../assets/partials/masthead.jade
 
-  section.valuepropisiton
+  section.narrow.valuepropisiton
     h1.hero Remote User Experience Checkup
+    
+    .row
+      .col-8.offset-2
+        img.illustration.hero-illustration(src='assets/img/undraw-ux-checkup.png')
+
     p Your business is online, plenty of people visit your site, but they don’t sign up or buy at the rate you expected them to. There must be bottlenecks somewhere... only you don’t know how to find them.
     p That’s where I come in! Book me in for a User Experience Checkup, and I’ll give you a comprehensive overview of where your journeys are falling down, and how to fix them. 
     
-  section.package
-    h2 This package includes
-    .text-columns
-      h3 Initial consultation
-      p We will get together for a one hour video chat to go through the specific challenges your business is facing online. To prepare, I will ask you to fill in a questionnaire about your business goals, challenges and your vision for the future.
+  section.narrow.package
+    h2.pull-center This package includes
+    ol.package-contents
+      li
+        h3 Initial consultation
+        p We will get together for a one hour video chat to go through the specific challenges your business is facing online. To prepare, I will ask you to fill in a questionnaire about your business goals, challenges and your vision for the future.
       
-      h3 Distilling recommendations
-      p I will create a list of recommendations on how to tackle your challenges, and prioritise them based on both UX best practice and your specific goals for the site.
+      li
+        h3 UX heavy lifting
+        p First, I will analyse your traffic over a couple of weeks. Then I will use the data I gathered to chart the visitor journey through your site and document all bottlenecks, pain points and delighters they encounter on your pages. 
+        
+        li
+          h3 Distilling recommendations
+          p I will create a list of recommendations on how to tackle your challenges, and prioritise them based on both UX best practice and your specific goals for the site.
 
-      h3 Sharing insights
-      p We will get together over a video debrief call to go through the insights and recommendations, handing it over to you and your team &mdash; use it to kick-start your backlog!
+        li
+          h3 Sharing insights
+          p We will get together for a video debrief call to go through the insights and recommendations, handing it over to you and your team &mdash; use it to kick-start your backlog!
 
-      h3 UX heavy lifting
-      p I will analyse your traffic over a couple of weeks, to give time for trends to emerge. If you don’t have  the usual analytics tools set up, I will help you put them in place.
-      p I will use your data to chart the journey of your visitors through your site and document all bottlenecks, pain points and delighters they encounter on your pages. 
-
-      h3 Optional design phase
-      p If we uncover any meaty design problems that require a complex design solution and you'd like to continue working together, the door is open!
+      //- li
+      //-   h3 Optional design phase
+      //-   p If we uncover any meaty design problems that require a complex design solution and you'd like to continue working together, the door is open!
     
   .sprinkles
 
   section.narrow.targetaudience
-    h2 This is for you if
+    h2.pull-center This is for you if
     ul
       li You have an established vision and focus for your startup or product
       li You built something that’s already online and gets good traffic

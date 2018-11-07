@@ -136,7 +136,7 @@ nav ul li::before { display:none; }
 }
 
 
-.hero {
+.tagline {
   @extend %squish-L;
   @extend %stack-M;
 }
@@ -168,7 +168,7 @@ section.narrow {
 }
 
 .service {
-  @extend %stack-L;
+  @extend %stack-XL;
 }
 
 .highlight {position:relative;display:inline-block;}
@@ -185,16 +185,19 @@ section.narrow {
 .sprinkles {
   width:100%;
   height:40vmin;
-  margin:(-2*$baseline) 0px (-$baseline) 0;
+  margin:(-3*$baseline) 0 0 0;
 
   background:center/40px url('./assets/img/pattern-sprinkles.png') repeat;
   clip-path:url("#wave");
 }
 
-.illustration {position:relative;}
-.illustration img {
+.illustration {
   width:100%;
   max-width:1000px;
+}
+
+.illustration.hero-illustration {
+  margin:(-2*$baseline) 0 $baseline;
 }
 
 .overlay {
@@ -236,3 +239,25 @@ dl.factsheet div {
 }
 
 dl.factsheet dd { font-weight:400;}
+
+
+.package-contents {
+  counter-reset: packageContents;
+}
+.package-contents li {
+  position:relative;
+}
+.package-contents li::before {
+  counter-increment: packageContents;
+  content:counter(packageContents);
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: -.4rem;
+  left: -3rem;
+  border-radius: 50%;
+  background-color: #FFE17D;
+  text-align: center;
+  border: 6px solid #FFE17D;
+}
