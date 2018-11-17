@@ -14,21 +14,21 @@ include ../assets/partials/header.jade
       
     section.service
       .row
-        .col-4
+        .service-img
           img(src='assets/img/undraw-design-research.png', alt='Research illustration', class='illustration')
-        .col-7.offset-1
+        .col
           h3 Expert Design Research
           p You have the beginnings of a product or service but need more insight about your customers to make it shine. You want proper research done but you can't afford a full-time UX or Product Designer.
           a.action About this package
           
     section.service
-      .row
-        .col-7
+      .row.flex-reverse
+        .service-img
+          img(src='assets/img/undraw-ux-checkup.png', alt='Checkup illustration', class='illustration')
+        .col.service-desc
           h3 Remote UX Checkup
           p Your business is online, plenty of people visit your site, only they don’t sign up or buy at the rate you expected them to. There must be bottlenecks somewhere... but you don’t know how to find them.
-          a.action(href='./service-template.html') About this package
-        .col-4.offset-1
-          img(src='assets/img/undraw-ux-checkup.png', alt='Checkup illustration', class='illustration')
+          a.action(href='./remote-ux-checkup.html') About this package
 
 
     .sprinkles
@@ -40,6 +40,6 @@ include ../assets/partials/header.jade
         .col-8
           h2 Hi there, it's Zita here
           p I’m here to take the mystery out of getting to know your customers, so that you can make your online presence work even harder for you.
-          button More about me
+          a(href="about.html").button More about me
 
   include ../assets/partials/footer.jade

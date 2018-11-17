@@ -4,6 +4,9 @@
 .row {
   display: flex;
 }
+.flex-reverse {
+  flex-direction: row-reverse;
+}
 .col {
   flex: 1;
 }

@@ -53,6 +53,10 @@ table {
   display: flex;
 }
 
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
 .col {
   flex: 1;
 }
@@ -233,6 +237,10 @@ a:focus {
   transition: outline-offset 0.1s ease-in-out;
 }
 
+a.button {
+  text-decoration: none;
+}
+
 small {
   font: 200 0.75rem/1.3 "Nunito", sans-serif;
 }
@@ -332,6 +340,7 @@ nav ul li a:hover {
 
 input, select, textarea,
 input[type='submit'],
+a.button,
 button {
   border: 2px solid #000;
   background-color: #fff;
@@ -341,12 +350,14 @@ button {
 
 input:hover, select:hover, textarea:hover,
 input[type='submit']:hover,
+a.button:hover,
 button:hover {
   box-shadow: 0 0 0 3px #adeaff;
 }
 
 input:focus, select:focus, textarea:focus,
 input[type='submit']:focus,
+a.button:focus,
 button:focus {
   outline: 0;
   box-shadow: 0 0 0 3px #FFEBAC;
@@ -355,20 +366,24 @@ button:focus {
 
 input:active, select:active, textarea:active,
 input[type='submit']:active,
+a.button:active,
 button:active {
   box-shadow: 0 0 0 3px #FFEBAC, inset 2px 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-button, input[type='submit'] {
+a.button, button, input[type='submit'] {
   cursor: pointer;
 }
 
+a.button.primary,
 button.primary {
   background-color: #000;
   color: #fff;
 }
 
-button.primary:hover, button.primary:focus {
+a.button.primary:hover, a.button.primary:focus,
+button.primary:hover,
+button.primary:focus {
   background-color: #1a1a1a;
 }
 
@@ -415,6 +430,8 @@ nav :last-child {
 @media screen and (max-width: 760px) {
   nav {
     position: relative;
+    right: auto;
+    top: auto;
     text-align: center;
   }
 }
@@ -464,6 +481,10 @@ nav ul li::before {
   background-size: cover;
 }
 
+.brand .homelink {
+  text-decoration: none;
+}
+
 .brand h1 span {
   display: none;
 }
@@ -477,7 +498,7 @@ nav ul li::before {
 @media screen and (max-width: 760px) {
   .brand {
     width: 50vw;
-    margin: 40px auto;
+    margin: 40px auto 10px;
   }
   .brand .logo {
     margin: 0 auto 20px;
@@ -520,6 +541,15 @@ section.narrow {
   max-width: 600px;
 }
 
+.service {
+  align-items: center;
+}
+
+.service-img {
+  width: 33%;
+  margin: 0 40px;
+}
+
 .highlight {
   position: relative;
   display: inline-block;
@@ -539,7 +569,7 @@ section.narrow {
 .sprinkles {
   width: 100%;
   height: 40vmin;
-  margin: -60px 0 0 0;
+  margin-top: -40px;
   background: center/40px url("./assets/img/pattern-sprinkles.png") repeat;
   clip-path: url("#wave");
 }
@@ -584,11 +614,17 @@ section.narrow {
   right: 0;
 }
 
-dl.factsheet div {
-  display: inline-block;
+.factsheet {
+  text-align: center;
+  display: flex;
 }
 
-dl.factsheet dd {
+.factsheet .fact {
+  display: inline-block;
+  flex: 1;
+}
+
+.factsheet .fact dd {
   font-weight: 400;
 }
 
@@ -613,6 +649,32 @@ dl.factsheet dd {
   background-color: #FFE17D;
   text-align: center;
   border: 6px solid #FFE17D;
+}
+
+.TODO {
+  color: #ec636a;
+}
+
+footer {
+  background-color: #000;
+  padding: 40px;
+}
+
+footer ul {
+  margin: 0 auto;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.clipPaths {
+  height: 0;
 }
 
 /*
@@ -693,18 +755,18 @@ h3, h4, h5, h6, p {
   }
 }
 
-dl.factsheet div {
+.factsheet .fact {
   margin-right: 10px;
 }
 
 @media screen and (max-width: 760px) {
-  dl.factsheet div {
+  .factsheet .fact {
     margin-right: 5px;
   }
 }
 
 @media screen and (min-width: 1140px) {
-  dl.factsheet div {
+  .factsheet .fact {
     margin-right: 20px;
   }
 }
@@ -725,35 +787,51 @@ dl.factsheet div {
   }
 }
 
-nav ul li, button, input[type='submit'], dl.factsheet {
+nav ul li, a.button, button, input[type='submit'], .factsheet {
   padding: 7px 20px;
 }
 
 @media screen and (max-width: 760px) {
-  nav ul li, button, input[type='submit'], dl.factsheet {
+  nav ul li, a.button, button, input[type='submit'], .factsheet {
     padding: 3px 10px;
   }
 }
 
 @media screen and (min-width: 1140px) {
-  nav ul li, button, input[type='submit'], dl.factsheet {
+  nav ul li, a.button, button, input[type='submit'], .factsheet {
     padding: 10px 30px;
   }
 }
 
-h2, input:not([type^='submit']), select, textarea, .tagline, dl.factsheet {
+h2, input:not([type^='submit']), select, textarea, .tagline, .factsheet {
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 760px) {
-  h2, input:not([type^='submit']), select, textarea, .tagline, dl.factsheet {
+  h2, input:not([type^='submit']), select, textarea, .tagline, .factsheet {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1140px) {
-  h2, input:not([type^='submit']), select, textarea, .tagline, dl.factsheet {
+  h2, input:not([type^='submit']), select, textarea, .tagline, .factsheet {
     margin-bottom: 30px;
+  }
+}
+
+footer ul li {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 760px) {
+  footer ul li {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  footer ul li {
+    margin-right: 30px;
   }
 }
 
