@@ -615,6 +615,11 @@ section.narrow {
 }
 
 .factsheet {
+  background: #FFEBAC;
+  border-radius: 20px;
+}
+
+.factsheet {
   text-align: center;
   display: flex;
 }

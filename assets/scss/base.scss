@@ -244,6 +244,11 @@ section.narrow {
 }
 
 .factsheet {
+  background:$c-gold-60;
+  border-radius: $baseline;
+}
+
+.factsheet {
   @extend %stack-M;
   @extend %squish-M;
   text-align:center;
