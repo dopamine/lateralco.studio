@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-<div class="post__header">
-  <h1 class="hero">{{ page.title | escape }}</h1>
-</div>
-<div class="page__content">
+<h1 class="hero">
+  {{ page.title | escape }}
+</h1>
+<div class="section narrow">
   {{ content | img_prefix }}
 </div>
 
-{%- include bio.html -%}
 </main>
