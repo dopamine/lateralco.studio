@@ -111,7 +111,7 @@ nav ul li::before { display:none; }
   .logo {
     width:120px;
     height:69px;
-    background:url('assets/img/logo-color.svg');
+    background:url('img/logo-color.svg');
     background-size:cover;
   }
   .homelink {
@@ -147,13 +147,13 @@ nav ul li::before { display:none; }
 .avatar {
   width:160px;
   height:160px;
-  background-image:url('assets/img/avatar-zita.jpg');
+  background-image:url('img/avatar-zita.jpg');
   background-size:cover;
   border-radius:50%;
   margin: 2em auto;
 }
 
-section {
+.section {
   max-width:800px;
   @extend %stack-L;
 
@@ -163,10 +163,10 @@ section {
     margin-right: 2*$baseline ;
   }
 }
-section.wide {
+.section.wide {
   max-width:960px;
 }
-section.narrow {
+.section.narrow {
   max-width:600px;
 }
 
@@ -179,9 +179,8 @@ section.narrow {
   width:33%;
   margin:0 2*$baseline;
 }
-.service-desc {
-
-}
+.service-img-left { float: left; }
+.service-img-right { float: right; }
 
 .highlight {position:relative;display:inline-block;}
 .highlight::after {
@@ -199,7 +198,7 @@ section.narrow {
   height:40vmin;
   margin-top:(-2*$baseline);
 
-  background:center/40px url('./assets/img/pattern-sprinkles.png') repeat;
+  background:center/40px url('./img/pattern-sprinkles.png') repeat;
   clip-path:url("#wave");
 }
 

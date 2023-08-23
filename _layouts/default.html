@@ -2,11 +2,13 @@
 <html lang="{{ site.locale | default: 'en' }}">
   {%- include head.html -%}
   <body class="body-{{ page.layout }}">
-    <div class="container-main">
-      {%- include header.html -%}
+    <a href="#content" tabindex="1" class="skiptocontent">Skip to content</a>
 
-      {{ content }}
-    </div>
+      {%- include masthead.html -%}
+    
+      <div id="content">
+        {{ content }}
+      </div>
 
     {%- include footer.html -%}
   </body>
