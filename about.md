@@ -1,23 +1,27 @@
 ---
-layout: page
+layout: default
 title: About
-permalink: /about/
 ---
 
-![Zita's avatar]({{ site.imgsrc }}/assets/avatar.png){:.about-avatar}  
-Hey there, Zita here. This is my corner on the www.
+![Zita's photo]({{ site.baseurl }}/assets/img/avatar-zita.jpg){:.avatar}
+{:.pull-center}
 
-### This site runs on
+# Hi there, it's Zita here
+{:.hero}
 
-- Github Pages
-- Jekyll
-- Custom theme from scratch
-- Cloudflare R2 for image hosting
+I’m here to take the mystery out of getting to know your customers, so that you can make your online presence work even harder for you.
+{:.lead}
 
-...and doesn't cost me a penny.
+## My story
 
-### Projects borrwed from, people to thank
+Apple pie I love I love pastry. Topping gummi bears bear claw. Chocolate cake gummies carrot cake marzipan donut. 
 
-- [Persephone by @erlzhang](https://github.com/erlzhang/jekyll-theme-persephone)
-- [Poole by @mod](https://github.com/poole/poole)
-- [Jekyll image gallery script by Michael Rose](https://github.com/mmistakes/jekyll-sample-content)
+Dessert macaroon carrot cake. I love I love chocolate cake caramels bear claw danish tart jelly-o. Chocolate tootsie roll wafer macaroon marzipan jujubes. Cupcake pudding gummies. Gingerbread I love lollipop sweet roll biscuit marzipan donut toffee.
+
+## I'm here to help your business
+
+I love I love chocolate cake caramels bear claw danish tart jelly-o. 
+
+[Learn more about my services](index.html){:.button.primary}
+
+[Get in touch](#){:.contactbutton}
