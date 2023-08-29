@@ -148,7 +148,7 @@ nav ul li::before { display:none; }
   width:160px;
   height:160px;
   border-radius:50%;
-  margin: 2em auto;
+  margin: 2em;
 }
 
 .section {
@@ -177,8 +177,8 @@ nav ul li::before { display:none; }
   width:33%;
   margin:0 2*$baseline;
 }
-.service-img-left { float: left; }
-.service-img-right { float: right; }
+.img-pull-left { float: left; }
+.img-pull-right { float: right; }
 
 .highlight {position:relative;display:inline-block;}
 .highlight::after {

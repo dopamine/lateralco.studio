@@ -4,35 +4,33 @@ title: Services
 ---
 
 {% capture intro %}
-Up your startup game with <span class="highlight">design research</span>
+Get to the next level with <span class="highlight">design research</span>
 {:.hero.tagline}
 
-Ready to bootstrap your business with design? Let's talk. 
+Lateral &co is a tiny design studio offering customised services based on your unique needs. 
 {:.lead}
 
-I offer customised packages based on your unique needs, from taking your first steps towards building a design-led product, to taking full stock of how your existing service performs.
+From taking your first steps towards building an excellent customer experience, to taking full stock of how your existing service performs, here’s how I can help your product succeed:
 {% endcapture %}
 {% include container.html class="section narrow valueprop" content=intro %}
 
 {% capture section-research %}
-![]({{ site.baseurl }}/assets/img/undraw-design-research.png){:.service-img.service-img-left}
+![]({{ site.baseurl }}/assets/img/undraw-design-research.png){:.service-img.img-pull-left}
 
-### Want to learn what your customers need?
+### Expert Design Research
+When you have the beginnings of a product or service but need just a bit more insight about your customers to make it shine, a quick design discovery project will help set you off on the right track.
 
-You have the beginnings of a product or service but need more insight about your customers to make it shine. You want proper research done but you can't afford a full-time UX or Product Designer.
-
-[Design Discovery service &raquo;](services/expert-design-research.html){:.action}
+[Design Discovery service](services/expert-design-research.html){:.action}
 {% endcapture %}
 {% include container.html class="section service" content=section-research %}
 
 {% capture section-review %}
-![]({{ site.baseurl }}/assets/img/undraw-ux-checkup.png){:.service-img.service-img-right}
+![]({{ site.baseurl }}/assets/img/undraw-ux-checkup.png){:.service-img.img-pull-right}
 
-### Need to improve your product experience?
+### Remote UX Checkup
+If you already have some firm ideas about what you’ll build but just want a bit more confidence, or perhaps you already launched your product and need to identify and eradicate any pain points, you need a fast round of experience design review.
 
-Your business is online, plenty of people visit your site, only they don’t sign up or buy at the rate you expected them to. There must be bottlenecks somewhere... but you don’t know how to find them.
-
-[Expert UX Review service &raquo;](services/remote-ux-checkup.html){:.action}
+[Product Experience Review service](services/remote-ux-checkup.html){:.action}
 {% endcapture %}
 {% include container.html class="section service" content=section-review %}
 
