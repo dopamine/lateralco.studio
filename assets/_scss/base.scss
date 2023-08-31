@@ -164,13 +164,15 @@ header {
     margin-left: 2*$baseline ;
     margin-right: 2*$baseline ;
   }
-}
-.section.wide {
-  width:960px;
-  margin-left: -80px;
-}
-.section.narrow {
-  max-width:600px;
+  @media screen and (min-width: $bp-mobile ) {
+    .wide {
+      width:960px;
+      margin-left: -80px;
+    }
+    .narrow {
+      max-width:600px;
+    }
+  }
 }
 
 .service {
@@ -190,6 +192,8 @@ header {
 .clientlogo {
   margin: 1em;
   display: inline-block;
+  list-style-type: none;
+  &:before { content: '' !important }
 }
 
 @media screen and (min-width: $bp-mobile ) {
