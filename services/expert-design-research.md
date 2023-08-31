@@ -33,5 +33,5 @@ We will get together for a debrief to go through my insights and prioritised rec
 ## If this sounds like you, let's talk!
 {:.pull-center}
 
-[Get in touch]("contact.html"){:.button.contactbutton.primary}
+[Get in touch]({{ "contact.html" | relative_url }}){:.button.contactbutton.primary}
 {:.pull-center}

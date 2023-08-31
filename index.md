@@ -19,7 +19,7 @@ From taking your first steps towards building an excellent customer experience, 
 ### Expert Design Research
 When you have the beginnings of a product or service but need just a bit more insight about your customers to make it shine, a quick design discovery project will help set you off on the right track.
 
-[Design Discovery service &raquo;]("services/expert-design-research.html"){:.action}
+[Design Discovery service &raquo;]({{"services/expert-design-research.html" | relative_url }}){:.action}
 {% endcapture %}
 
 {% capture section-review %}
@@ -28,7 +28,7 @@ When you have the beginnings of a product or service but need just a bit more in
 ### Product Experience Review
 Do you have a firm idea of what you’ll build but just want a bit more confidence? Or perhaps you already launched your product and need to identify and eradicate any pain points? What you need is a comprehensive review of the product experience.
 
-[Expert UX Review service &raquo;]("services/remote-ux-checkup.html"){:.action}
+[Expert UX Review service &raquo;]({{ "services/remote-ux-checkup.html" | relative_url }}){:.action}
 {% endcapture %}
 
 {% include container.html class="section narrow valueprop" content=intro %}
