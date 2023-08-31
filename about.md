@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: page
+type: [narrow, notitle]
 title: About
 ---
 
@@ -12,11 +13,42 @@ title: About
 I’m here to take the mystery out of getting to know your customers, so that you can make your online presence work even harder for you.
 {:.lead}
 
-## My story
+As a well established Senior Product Designer, I specialise in early stage idea validation, interaction design and usability best practice. Designing for complex, data heavy or tightly regulated problem spaces is my jam — I will pick up your domain at record speeds, then create appropriate solutions that delight users and meet your business goals.
 
-Apple pie I love I love pastry. Topping gummi bears bear claw. Chocolate cake gummies carrot cake marzipan donut. 
+Based out of bonnie Scotland, I'm available for remote projects across the UK and beyond. Does any of the above sound like you and your business? Let's talk.
 
-Dessert macaroon carrot cake. I love I love chocolate cake caramels bear claw danish tart jelly-o. Chocolate tootsie roll wafer macaroon marzipan jujubes. Cupcake pudding gummies. Gingerbread I love lollipop sweet roll biscuit marzipan donut toffee.
+## Previous happy clients
+
+I have worked across a variety of industries, from startups through scaleups to mega corporations; from cloud marketing and healthcare to accounting and finance:
+
+{% assign logosrc = "https://dopamine.github.io/cv/" %}
+{% capture clients %}
+<ul>
+    <li class="clientlogo">
+        <img src="{{ logosrc }}content/job-logos/logo-potato.png" alt="Potato logo" width="108" height="50">
+    </li>
+    <li class="clientlogo">
+        <img src="{{ logosrc }}content/job-logos/logo-xero.svg" alt="Xero company logo" width="100" height="100">
+    </li>
+    <li class="clientlogo">
+        <img src="{{ logosrc }}content/job-logos/logo-comet.png" alt="Comet GC logo" width="168" height="50">
+    </li>
+    <li class="clientlogo">
+        <img src="{{ logosrc }}content/job-logos/logo-progression.svg" alt="Progression company logo" width="180" height="27">
+    </li>
+    <li class="clientlogo">
+        <img src="{{ logosrc }}content/job-logos/logo-freeagent.png" alt="FreeAgent logo" width="185" height="37">
+    </li>
+    <li class="clientlogo">
+        <img src="{{ logosrc }}content/job-logos/logo-craneware.png" alt="Craneware logo" width="180" height="35">
+    </li>
+    <li class="clientlogo">
+        <img src="{{ logosrc }}content/job-logos/logo-tb.png" alt="Tesco Bank logo" width="140" height="26">
+    </li>
+</ul>
+{% endcapture %}
+{% include container.html class="section wide clientlist pull-center" content=clients %}
+
 
 ## I'm here to help your business
 
@@ -24,4 +56,4 @@ I love I love chocolate cake caramels bear claw danish tart jelly-o.
 
 [Learn more about my services](index.html){:.button.primary}
 
-[Get in touch](#){:.contactbutton}
+[Get in touch]("contact.html"){:.contactbutton}

@@ -65,7 +65,7 @@ header {
   position:relative;
 }
 
-nav {
+.top-nav {
   position:absolute;
   right:0; top:20px;
   @extend %inset-S;
@@ -81,10 +81,14 @@ nav {
     text-align:center;
   }
 }
-nav ul {display:block; }
-nav ul li {display:inline-block;}
-nav ul li::before { display:none; }
-
+.top-nav ul {display:block; }
+.top-nav ul li {display:inline-block;}
+.top-nav ul li::before { display:none; }
+.nav-link.active {
+  color:$c-text;
+  border-bottom:2px solid $c-brand;
+  transition:border-bottom .3s ease;
+}
 
 .skiptocontent {
   position:fixed;
@@ -109,9 +113,9 @@ nav ul li::before { display:none; }
   position:relative;
 
   .logo {
-    width:120px;
-    height:69px;
-    background:url('img/logo-color.svg');
+    width:205px;
+    height:70px;
+    background:url('img/logo-color-lateral.svg');
     background-size:cover;
   }
   .homelink {
@@ -121,7 +125,7 @@ nav ul li::before { display:none; }
   h1 {
     position: absolute;
     top: 26px;
-    left: 144px;
+    left: 240px;
   }
   @media screen and (max-width: $bp-mobile) {
     width:50vw;
@@ -162,7 +166,8 @@ nav ul li::before { display:none; }
   }
 }
 .section.wide {
-  max-width:960px;
+  width:960px;
+  margin-left: -80px;
 }
 .section.narrow {
   max-width:600px;
@@ -177,6 +182,12 @@ nav ul li::before { display:none; }
   width:33%;
   margin:0 2*$baseline;
 }
+
+.clientlogo {
+  margin: 1em;
+  display: inline-block;
+}
+
 .img-pull-left { float: left; }
 .img-pull-right { float: right; }
 
@@ -258,13 +269,13 @@ nav ul li::before { display:none; }
 .factsheet .fact dd { font-weight:400;}
 
 
-.package-contents {
+.section {
   counter-reset: packageContents;
 }
-.package-contents li {
+.package-step {
   position:relative;
 }
-.package-contents li::before {
+.package-step::before {
   counter-increment: packageContents;
   content:counter(packageContents);
   display: block;

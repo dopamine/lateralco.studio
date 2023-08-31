@@ -33,20 +33,20 @@ blockquote::before {
 h1,h2,h3,h4,h5,h6 { padding:0;margin:0; }
 
 h1 { @extend %stack-L; }
-h2 { @extend %stack-M; }
+h2 { @extend %stack-M; margin-top: 2em;}
 h3,h4,h5,h6 { @extend %stack-S; }
 p { @extend %stack-S; }
 strong {font-weight:600;}
 em {font-style:italic;}
-section ul {
+.section ul {
   // @extend %squish-M;
    list-style-type:none;
  }
-section ul li {
+.section ul li {
   line-height:1.2em;
   @extend %stack-XS;
 }
-section ul li:before {
+.section ul li:before {
   content: '\2013';
   position: absolute;
   margin-left: -1.2*$baseline;
@@ -71,7 +71,7 @@ button {
 }
 
 
-nav ul li {
+.top-nav ul li {
   @extend %squish-M;
 
   a {
