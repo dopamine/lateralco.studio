@@ -164,17 +164,17 @@ header {
     margin-left: 2*$baseline ;
     margin-right: 2*$baseline ;
   }
-  @media screen and (min-width: $bp-mobile ) {
-    .wide {
-      width:960px;
-      margin-left: -80px;
-    }
-    .narrow {
-      max-width:600px;
-    }
-  }
 }
 
+@media screen and (min-width: $bp-mobile ) {
+  .wide {
+    width:960px;
+    margin-left: -80px;
+  }
+  .narrow {
+    max-width:600px;
+  }
+}
 .service {
   @extend %stack-XL;
   align-items: center;
