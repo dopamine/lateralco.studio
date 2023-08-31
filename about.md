@@ -51,9 +51,7 @@ I have worked across a variety of industries, from startups through scaleups to 
 
 
 ## I'm here to help your business
+{:.pull-center}
 
-I love I love chocolate cake caramels bear claw danish tart jelly-o. 
-
-[Learn more about my services](index.html){:.button.primary}
-
-[Get in touch]("contact.html"){:.contactbutton}
+[Get in touch]({{"contact.html" | relative_url }}){:.button.contactbutton}
+{:.pull-center}
