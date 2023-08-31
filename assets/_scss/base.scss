@@ -309,6 +309,10 @@ header {
 footer {
   background-color:#000;
   padding:2*$baseline;
+  color: #fff;
+  text-align: right;
+  a, a:visited { color: #fff;}
+  a:hover { color: $c-brand; }
 }
 footer ul {
   margin:0 auto;
