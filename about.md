@@ -47,7 +47,7 @@ I have worked across a variety of industries, from startups through scaleups to 
     </li>
 </ul>
 {% endcapture %}
-{% include container.html class="section wide clientlist pull-center" content=clients %}
+{% include container.html class="section clientlist pull-center" content=clients %}
 
 
 ## I'm here to help your business
