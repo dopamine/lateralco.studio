@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.locale | default: 'en' }}">
+  {%- include head.html -%}
+  <body class="body-{{ page.layout }}">
+    <a href="#content" tabindex="1" class="skiptocontent">Skip to content</a>
+
+      {%- include masthead.html -%}
+    
+      <main id="content">
+        {{ content }}
+      </main>
+
+    {%- include footer.html -%}
+    {%- include clippaths.html -%}
+  </body>
+</html>

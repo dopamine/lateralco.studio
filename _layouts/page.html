@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% unless page.type contains "notitle" %}
+  <h1 class="hero">
+    {{ page.title | escape }}
+  </h1>
+{% endunless %}
+<div class='section {{ page.type | join: " "}}'>
+  {{ content | img_prefix }}
+</div>

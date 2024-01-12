@@ -1,0 +1,331 @@
+:focus {
+  outline: 2px solid $c-gold-60;
+  outline-offset: 4px;
+  transition:outline-offset 0.1s ease-in-out, outline 0.1s ease-in-out;
+}
+
+input, select, textarea,
+input[type='submit'],
+a.button,
+button {
+  border:2px solid $c-grey-00;
+  background-color:#fff;
+  border-radius:6px;
+  transition: box-shadow 0.2s ease-in-out;
+  &:hover {
+    box-shadow:0 0 0 3px $c-interaction-l;
+  }
+  &:focus {
+    outline:0;
+    box-shadow:0 0 0 3px $c-gold-60;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  &:active {
+    box-shadow:0 0 0 3px $c-gold-60, inset 2px 3px 0 0 rgba(0,0,0,0.1);
+  }
+}
+a.button,button, input[type='submit'] {
+  @extend %squish-M;
+  cursor:pointer;
+}
+
+a.button.primary,
+button.primary {
+  background-color:$c-grey-00;
+  color:#fff;
+  &:hover, &:focus { background-color: lighten($c-grey-00,10)}
+}
+
+button.action,
+button.action:hover,
+button.action:active,
+button.action:focus {
+  border:0;box-shadow:none;
+  border-radius:0;
+  text-decoration:underline;
+}
+button.action:hover {
+  color:$c-interaction;
+}
+
+input:not([type ^= 'submit']), select, textarea {
+  @extend %inset-S;
+  @extend %stack-M;
+  display:block;
+  width:90%;
+  max-width:400px;
+  border-color: $c-grey-60;
+  &:focus { border-color:$c-grey-20; }
+}
+
+header {
+  @extend %squish-XL;
+//-  @extend %stack-L;
+  background:$c-grey-100;
+  position:relative;
+}
+
+.top-nav {
+  position:absolute;
+  right:0; top:20px;
+  @extend %inset-S;
+  @extend %stack-XL;
+
+  :last-child {
+    margin-right:0;
+  }
+
+  @media screen and (max-width:$bp-mobile) {
+    position:relative;
+    right:auto; top:auto;
+    text-align:center;
+  }
+}
+.top-nav ul {display:block; }
+.top-nav ul li {display:inline-block;}
+.top-nav ul li::before { display:none; }
+.nav-link.active {
+  color:$c-text;
+  border-bottom:2px solid $c-brand;
+  transition:border-bottom .3s ease;
+}
+
+.skiptocontent {
+  position:fixed;
+  top:-140px;left:4px;
+  width:20vw;
+  @extend %squish-S;
+  background:$c-grey-00;
+  color:$c-grey-80;
+  text-align:center;
+  border-radius: 0 0 6px 6px ;
+  &:hover {
+    color:$c-gold-60;
+  }
+}
+.skiptocontent:focus {
+  top:0px;left:16px;
+  z-index:10;
+  outline:0;
+}
+
+.brand {
+  position:relative;
+
+  .logo {
+    width:205px;
+    height:70px;
+    background:url('img/logo-color-lateral.svg');
+    background-size:cover;
+  }
+  .homelink {
+    text-decoration: none;
+  }
+  h1 span{ display:none; }
+  h1 {
+    position: absolute;
+    top: 26px;
+    left: 240px;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    width:50vw;
+    margin:2*$baseline auto $baseline/2;
+    .logo {
+      margin:0 auto $baseline;
+    }
+    h1 {
+      position:relative;
+      top:0;left:0;
+      margin:0 auto 0;
+      text-align:center;
+    }
+  }
+}
+
+
+.tagline {
+  @extend %squish-L;
+  @extend %stack-M;
+}
+
+.avatar {
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  margin: 2em;
+}
+
+.section {
+  max-width:800px;
+  @extend %stack-L;
+
+  margin:0 auto;
+  @media screen and (max-width: $bp-mobile ) {
+    margin-left: 2*$baseline ;
+    margin-right: 2*$baseline ;
+  }
+}
+
+@media screen and (min-width: $bp-mobile ) {
+  .wide {
+    width:960px;
+    margin-left: -80px;
+  }
+  .narrow {
+    max-width:600px;
+  }
+}
+.service {
+  @extend %stack-XL;
+  align-items: center;
+}
+
+.service-img {
+  width: 100%;
+
+  @media screen and (min-width: $bp-mobile ) {
+    width:33%;
+    margin:0 2*$baseline;
+  }
+}
+
+.clientlogo {
+  margin: 1em;
+  display: inline-block;
+  list-style-type: none;
+  &:before { content: '' !important }
+}
+
+@media screen and (min-width: $bp-mobile ) {
+  .img-pull-left { float: left; }
+  .img-pull-right { float: right; }
+}
+
+.highlight {position:relative;display:inline-block;}
+.highlight::after {
+  display: block;
+  content:'';
+  width:100%; height:1ex;
+  background: $c-gold-60;
+  position:relative;
+  top:-1.4ex;
+  z-index:-10;
+}
+
+.sprinkles {
+  width:100%;
+  height:40vmin;
+  margin-top:(-2*$baseline);
+
+  background:center/40px url('./img/pattern-sprinkles.png') repeat;
+  clip-path:url("#wave");
+}
+
+.illustration {
+  width:100%;
+  max-width:1000px;
+}
+
+.illustration.hero-illustration {
+  @media screen and (min-width:$bp-hd) {
+    margin:(-2*$baseline) 0 $baseline;
+  }
+}
+
+.overlay {
+  display:none;
+  position:fixed;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.3);
+  overflow-x:scroll;
+}
+.contactform {
+  position:relative;
+  width:40vw;
+  //height:60vh;
+  margin:5vh auto;
+  @extend %inset-XL;
+  background:$c-grey-100;
+  box-shadow:0 0 20px 20px rgba(0,0,0,0.1);
+  @media screen and (max-width:$bp-mobile) {
+    width:80vw;
+  }
+}
+
+.dismiss {
+  @extend %inset-M;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.factsheet {
+  background:$c-gold-60;
+  border-radius: $baseline;
+}
+
+.factsheet {
+  @extend %stack-M;
+  @extend %squish-M;
+  text-align:center;
+  display: flex;
+}
+.factsheet .fact {
+  display:inline-block;
+  @extend %inline-S;
+  flex:1;
+}
+
+.factsheet .fact dd { font-weight:400;}
+
+
+.section {
+  counter-reset: packageContents;
+}
+.package-step {
+  position:relative;
+}
+.package-step::before {
+  counter-increment: packageContents;
+  content:counter(packageContents);
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: -.4rem;
+  left: -3rem;
+  border-radius: 50%;
+  background-color: #FFE17D;
+  text-align: center;
+  border: 6px solid #FFE17D;
+}
+
+
+.TODO {
+  color:darken($c-error,20);
+}
+
+
+footer {
+  background-color:#000;
+  padding:2*$baseline;
+  color: #fff;
+  text-align: right;
+  a, a:visited { color: #fff;}
+  a:hover { color: $c-brand; }
+}
+footer ul {
+  margin:0 auto;
+}
+footer ul li {
+  display:inline-block;
+  @extend %inline-M;
+}
+footer ul li a {
+  color:#fff;
+  text-decoration: none;
+}
+
+.clipPaths {height:0}

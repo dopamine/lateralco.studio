@@ -1,10 +1,8 @@
-// sass main
-// sourceMap false
-// compileExpanded: ../main.css
-
-@import "./scss/reset.scss";
-@import "./scss/vars.scss";
-@import "./scss/grids.scss";
-@import "./scss/typog.scss";
-@import "./scss/base.scss";
-@import "./scss/spacing.scss";
+---
+---
+@import "reset.scss";
+@import "vars.scss";
+@import "grids.scss";
+@import "typog.scss";
+@import "base.scss";
+@import "spacing.scss";
