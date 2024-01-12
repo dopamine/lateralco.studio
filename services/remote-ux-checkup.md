@@ -13,6 +13,7 @@ That’s where I come in! Book me in for a User Experience Checkup, and I’ll g
 ## This package includes
 {:.pull-center}
 
+{% capture steps %}
 ### Video consultation &amp; questionnaire
 {:.package-step}
 I'll get to know your product and work with you to build a solid understanding of the challenges you're facing, and how I can help you. We will also identify your success metrics for this effort so we can track progress.
@@ -26,6 +27,8 @@ I will deep-dive into as many sources of information about your product as I can
 We will get together for a debrief to go through my insights and prioritised recommendations, handing actionable learnings over to you and your team &mdash; use this to kick-start your backlog! 
 
 (If you need design support past this point, we can also discuss that.)
+{% endcapture %}
+{% include container.html class="section narrow" content=steps %}
 
 
 ## This is for you if
