@@ -227,7 +227,9 @@ header {
 }
 
 .illustration.hero-illustration {
-  margin:(-2*$baseline) 0 $baseline;
+  @media screen and (min-width:$bp-hd) {
+    margin:(-2*$baseline) 0 $baseline;
+  }
 }
 
 .overlay {
