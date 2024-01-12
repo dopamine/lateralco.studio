@@ -17,7 +17,7 @@ Thatâ€™s where I come in! Book me in for a quick Design Research sprint, and Iâ€
 {:.package-step}
 I'll learn about your challenges and zone in on your unique customer insight needs, recommending research methods and deliverables that match your goals.
 
-### Fast-paced guerilla resaerch sprint
+### Fast-paced guerilla research sprint
 {:.package-step}
 I'll handle the entire research process for you, from recruitment, through insight gathering, to analysis. You can be as much or as little involved as you like, although I recommend watching some customer interviews as this can galvanise the whole team!
 
