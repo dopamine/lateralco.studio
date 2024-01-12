@@ -12,6 +12,7 @@ Thatâ€™s where I come in! Book me in for a quick Design Research sprint, and Iâ€
 ## The Design Discovery package includes
 {:.pull-center}
 
+{% capture steps %}
 ### Video consultation &amp; questionnaire
 {:.package-step}
 I'll learn about your challenges and zone in on your unique customer insight needs, recommending research methods and deliverables that match your goals.
@@ -23,6 +24,9 @@ I'll handle the entire research process for you, from recruitment, through insig
 ### Best-practice recommendations
 {:.package-step}
 We will get together for a debrief to go through my insights and prioritised recommendations, handing the learnings over to you and your team &mdash; use this to kick-start your backlog!
+{% endcapture %}
+{% include container.html class="section narrow" content=steps %}
+
 
 ## This is for you if
 {:.pull-center}
