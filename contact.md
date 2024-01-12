@@ -6,8 +6,7 @@ title: Get in touch
 
 <section>
 <h2>Let's talk</h2>
-    <p>Sounds like you're interested — drop me a line with about what your business needs and if all the stars are aligned, we'll be meeting up for your initial consultation in a jiffy.</p>
-    <p>Current availabilty: <strong>November 2023 onwards</strong></p>
+    <p>Sounds like you're interested, so drop me a line below. Can't wait to hear more about what your business needs.</p>
     <form action="https://formspree.io/f/moqowvla" method="post">
         <input type="hidden" name="_subject" value="Lat&co contact">
         <label>Reason you're getting in touch</label>
@@ -23,7 +22,7 @@ title: Get in touch
         <textarea name="message"></textarea>
         <label>Your email address *</label>
         <input type="text" name="email" placeholder="yours@example.com">
-        <label>Your website *</label>
+        <label>Your website</label>
         <input type="text" name="url" placeholder="http://">
         <input type="submit" value="Send message">
     </form>
