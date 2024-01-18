@@ -2,6 +2,8 @@
 layout: page
 type: narrow
 title: Expert Design Research
+sitemap:
+  priority: 1
 ---
 ![]({{ site.baseurl }}/assets/img/undraw-design-research.png){:.illustration.hero-illustration}
 

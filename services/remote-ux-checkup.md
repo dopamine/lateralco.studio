@@ -2,6 +2,8 @@
 layout: page
 type: narrow
 title: Remote User Experience Checkup
+sitemap:
+  priority: 1
 ---
 
 ![]({{ site.baseurl }}/assets/img/undraw-ux-checkup.png){:.illustration.hero-illustration}

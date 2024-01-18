@@ -30,8 +30,8 @@ collections:
 sass:
   sass_dir: assets/_scss
 
-plugins:
-  - jekyll-feed
+#plugins:
+#  - jekyll-feed
 
 markdown: kramdown
 kramdown:
